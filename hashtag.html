@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repalce_space</title>
+</head>
+<body>
+    <p>
+        Input String: GeeksforGeeks is the computer
+        science\nportal\tfor geeks.
+    </p>
+ 
+     
+    <button onclick="geek()">
+        Click it!
+    </button>
+     
+    <!-- <p id="app"></p> -->
+ 
+     
+    <script>
+        function geek() {
+            var x = /\s/g;
+            var y = "#";
+            var str = "GeeksforGeeks is the computer "
+                    + "science\nportal\tfor geeks.";
+            var str1 = str.replace(x, y);
+            alert("The new string is: \n" + str1);
+        }
+    </script>
+</body>
+</html>
